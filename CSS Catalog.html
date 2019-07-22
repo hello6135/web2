@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CSS사용목록</title>
+    <meta charset="utf-8">
+    <style>/*CSS를 불러옵니다*/
+    /*CSS주석*/
+      #EFGH/*id   속성은 앞에 #을 붙여주자*/ {
+        color:blue;
+      }
+      .ABCD/*class속성은 앞에 .을 붙여주자*/ {
+        color:green;
+      }
+      a {
+        color:gray;
+      }/*'a'태그가 사용된 문장을 Red색상으로 바꿈*/
+      h1 {
+        font-size:50px/*px또는%로도 지정가능*/;/*글씨 크기를 지정함*/
+      }
+      h2 {
+        text-align:center;/*글씨 위치 정렬*/
+      }
+    </style>
+  </head>
+  <body>
+    <a style="color:blue">단일 문장 색변경 : a style="color=*"</a><!--style속성을 통한 CSS사용-->
+    <br><h1>글씨크기지정 : font-size:*px{CSS}</h1>
+    <h2>위치정렬 : text-align:*{CSS}</h2>
+    <a>사용자지정</a><!--속성부여 우선순위 : id > class > tag = 뒤에 나와도 적용된다는 뜻-->
+    <a class="ABCD"> 속성부여 : class="*"</a>
+    <a class="ABCD" id="EFGH"> & id="*"</a><!--id는 가급적 하나의 태그에만 사용, 예외지정 할때-->
+    <br><br><a href="HTML Tag Catalog.html">뒤로</a>
+  </body>
+</html>

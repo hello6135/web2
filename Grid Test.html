@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Grid연습페이지</title>
+    <meta charset="utf-8">
+    <style>
+      .parent{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+      }
+      .a{
+        border:3px solid red;
+        grid-column: 1/3;/*왼쪽부터 1번째 줄부터/3번째 줄까지*/
+        grid-row: 1/3;/*위쪽부터 1번째 줄부터/3번째 줄까지*/
+      }
+      .b{
+        border:3px solid blue;
+        grid-column: 3/4;
+        grid-row: 1/4;
+      }
+      .c{
+        border:3px solid black;
+      }
+      .d{
+        border:3px solid yellow;
+        grid-column: 3/4;
+        grid-row: 1/3;
+      }/*퍼즐이 겹쳐도 겹치는대로 배치되는 모습[후에 실행되는 코드가 위에 있는 모습]*/
+      .e{
+        border:3px solid black;
+      }
+      div{
+        text-align:center;
+        margin:5px;
+        padding:3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="a">
+        a
+      </div>
+      <div class="b">
+        b
+      </div>
+      <div class="c">
+        c
+      </div>
+      <div class="d">
+        d
+      </div>
+      <div class="e">
+        e
+      </div>
+    </div>
+    <a href="HTML Tag Catalog.html">뒤로</a>
+  </body>
+</html>

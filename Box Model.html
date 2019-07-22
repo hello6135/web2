@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BoxModel연습페이지</title>
+    <style>
+      h1, h2/*','를 통해 and역할을 할 수 있음*/ {
+        border-width:5px;/*테두리 두께*/
+        border-color:red;/*테두리 색깔*/
+        border-style:solid;/*테두리 종류 ex)점선, 단선 등등*/
+        border:5px solid red;/*위의 세 줄과 같은 코드, 중복지양법*/
+        padding:20px;/*글씨와 테두리 사이의 간격*/
+        margin:20px;/*테두리와 테두리 사이의 간격*/
+        width:200px;/*테두리의 가로 길이*/
+        height:50px;/*테두리의 세로 길이*/
+        display:block;/*block level element로 바꿔줌, inline element로도 변경가능*/
+      }
+      div {
+        border-right:1px solid black;/*오른쪽 선*/
+        border-bottom:3px solid blue;/*아래 선*/
+        padding-right:10px;/*글씨와 오른쪽 선 사이의 길이*/
+        display:inline;/*inline element로 바꿔줌, block level element로도 변경가능*/
+        text-decoration:line-through;/*'삭선','밑줄','윗줄' 등등*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>테두리 생성</h1><!--h1 tag가 block level element라는 것을 알 수 있음-->
+    <h2>테두리 생성2</h2>
+    <div>테두리 생성3</div><br>
+    <!--block level element는 가로 범위를 다 차지함, inline element는 글씨 크기만큼의 범위만 차지함-->
+    <br><img src="C:\Users\lee\Desktop\Web\CSS box model.png" align="center">[박스모델의 구성형태]
+    <br><br><a href="HTML Tag Catalog.html">뒤로</a>
+  </body>
+</html>

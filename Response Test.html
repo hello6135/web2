@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>반응형 디자인 연습페이지</title>
+    <meta charset="utf-8">
+    <style>
+    div{
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+      border:2px solid black;
+    }
+    @media(max-width:1000px)/*페이지의 최대너비가 1000PX(이하)이면 {}안의 스타일을 적용*/{
+      div{
+        border:none;
+      }
+    }
+    @media(max-width:800px)/*페이지의 최대너비가 800PX(이하)이면 {}안의 스타일을 적용*/{
+      div{
+        display:block;
+      }
+    }
+    @media(max-width:600px)/*페이지의 최대너비가 600PX(이하)이면 {}안의 스타일을 적용*/{
+      div{
+        display:none;/*내용을 보이지 않음*/
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>
+        페이지의 너비를
+      </h1>
+      <h1>
+        조절해보세요
+      </h1>
+    </div>
+    <a href="HTML Tag Catalog.html">뒤로</a>
+  </body>
+</html>
